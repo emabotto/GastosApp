@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de gastos</title>
+</head>
+
+<body>
+
+    <h1>Aplicacion para llevar gastos</h1>
+    <h2>gastos</h2>
+    <div>
+        <label>Monto:
+            <input type="number" >
+        </label>
+
+        <label> Tipo:
+            <select id="tipo">
+                <option value="comida">Comida</option>
+                <option value="transporte">Transporte</option>
+                <option value="entretenimiento">Entretenimiento</option>
+            </select>
+        </label>
+        <button onclick="agregar_gasto()">Agregar</button>
+    </div>
+    
+    <div>
+        <label>Moneda:
+            <select id="currency">
+                <option value="USD">Dólar</option>
+                <option value="EUR">Euro</option>
+                <option value="GBP">Libra</option>
+                <option value="JPY">Yen</option>
+            </select>
+        </label>
+        <label>Monto:
+            <input type="number" id="monto">
+        </label>
+    
+        <button onclick="convertir()">Convertir</button>
+    </div>
+    <h2>Resultado</h2>
+    <script src='app.js'> </script>
+</body>
+</html>
+
